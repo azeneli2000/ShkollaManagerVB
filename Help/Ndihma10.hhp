@@ -1,0 +1,78 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=Ndihma10.chm
+Contents file=Permbajtja.hhc
+Default Window=dritare
+Default topic=index.html
+Display compile progress=No
+Index file=Indeksi.hhk
+Language=0x409 English (United States)
+Title=Ndihma
+
+[WINDOWS]
+dritare=,"Permbajtja.hhc","Indeksi.hhk","index.html",,,,,,0x2120,,0x0,,0x1000000,,,,,,0
+
+
+[FILES]
+amza.html
+elimino_nxenes.html
+evidenca.html
+gjeneralitete.html
+hedhje_notash.html
+hedhje_te_dhenash.html
+hidh_notat_vjetore_ne_amze.html
+index.html
+informacione.html
+instrumente.html
+instrumente_klase.html
+kalo_klase.html
+konfigurimi.html
+konsultime.html
+krijo_perdorues.html
+modifiko_gjeneralitete.html
+modifiko_notat.html
+modifiko_perdorues.html
+notat.html
+notat_e_semestrit_te_dyte.html
+notat_e_semestrit_te_pare.html
+notat_momentale.html
+notat_vjetore.html
+perdorues.html
+statistika.html
+statistika_klasat.html
+statistika_nxenesit.html
+veprime.html
+
+[ALIAS]
+f1=index.html
+f10=hedhje_te_dhenash.html
+f11=gjeneralitete.html
+f12=hedhje_notash.html
+f13=veprime.html
+f14=modifiko_notat.html
+f15=modifiko_gjeneralitete.html
+f16=elimino_nxenes.html
+f17=statistika.html
+f18=statistika_klasat.html
+f19=statistika_nxenesit.html
+f2=konsultime.html
+f20=konfigurimi.html
+f21=perdorues.html
+f22=informacione.html
+f23=instrumente.html
+f24=instrumente_klase.html
+f25=kalo_klase.html
+f26=hidh_notat_vjetore_ne_amze.html
+f3=notat.html
+f4=notat_momentale.html
+f5=notat_e_semestrit_te_pare.html
+f6=notat_e_semestrit_te_dyte.html
+f7=notat_vjetore.html
+f8=evidenca.html
+f9=amza.html
+
+[MAP]
+#include map10.h
+
+[INFOTYPES]
+

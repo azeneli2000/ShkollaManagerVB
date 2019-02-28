@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Hyrje">
+		<param name="Local" value="index.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Konsultime">
+			<param name="Local" value="konsultime.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Nota">
+				<param name="Local" value="notat.html">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Notat momentale">
+					<param name="Local" value="notat_momentale.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Notat e semestrit te pare">
+					<param name="Local" value="notat_e_semestrit_te_pare.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Notat e semestrit te dyte">
+					<param name="Local" value="notat_e_semestrit_te_dyte.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Notat vjetore">
+					<param name="Local" value="notat_vjetore.html">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Evidenca">
+				<param name="Local" value="evidenca.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Amza">
+				<param name="Local" value="amza.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Hedhje Te Dhenash">
+			<param name="Local" value="hedhje_te_dhenash.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Gjeneralitete">
+				<param name="Local" value="gjeneralitete.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Hedhja e notave">
+				<param name="Local" value="hedhje_notash.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Veprime">
+			<param name="Local" value="veprime.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Modifikimi i notave">
+				<param name="Local" value="modifiko_notat.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Modifikimi i gjeneraliteteve">
+				<param name="Local" value="modifiko_gjeneralitete.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Eliminimi i nxenesit">
+				<param name="Local" value="elimino_nxenes.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Statistikat">
+			<param name="Local" value="statistika.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Statistika per klasat">
+				<param name="Local" value="statistika_klasat.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Statistika per nxenesit">
+				<param name="Local" value="statistika_nxenesit.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Konfigurime">
+			<param name="Local" value="konfigurimi.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Perdorues">
+				<param name="Local" value="..\..\..\..\..\..\Help\perdorues.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Informacione">
+				<param name="Local" value="informacione.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Instrumente">
+			<param name="Local" value="instrumente.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Konfigurimi i klasave">
+				<param name="Local" value="instrumente_klase.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Kalo klase">
+				<param name="Local" value="kalo_klase.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Hedhja e notave vjetore ne amze">
+				<param name="Local" value="hidh_notat_vjetore_ne_amze.html">
+				</OBJECT>
+		</UL>
+	</UL>
+</UL>
+</BODY></HTML>

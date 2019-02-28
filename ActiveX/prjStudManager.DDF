@@ -1,0 +1,54 @@
+.OPTION EXPLICIT
+.Set Cabinet=off
+.Set Compress=off
+.Set MaxDiskSize=CDROM
+.Set ReservePerCabinetSize=6144
+.Set DiskDirectoryTemplate=".."
+.Set CompressionType=MSZIP
+.Set CompressionLevel=7
+.Set CompressionMemory=21
+.Set CabinetNameTemplate="prjStudManager.CAB"
+"Setup.Lst"
+"setup.exe"
+.Set Cabinet=on
+.Set Compress=on
+"prjStudManager.exe"
+"msvbvm60.dll"
+"OLEAUT32.DLL"
+"OLEPRO32.DLL"
+"ASYCFILT.DLL"
+"STDOLE2.TLB"
+"COMCAT.DLL"
+"hhctrl.ocx"
+"itss.dll"
+"itircl.dll"
+"hh.exe"
+"msadox.dll"
+"MSCOMCTL.OCX"
+"MSCOMCT2.OCX"
+"COMCT332.OCX"
+"sg20o.ocx"
+"MSFLXGRD.OCX"
+"ARVIEW2.OCX"
+"RICHTX32.OCX"
+"RICHED32.DLL"
+"MSCHRT20.OCX"
+"MSMASK32.OCX"
+"COMDLG32.OCX"
+"MDAC_TYP.EXE"
+"SETUP1.EXE"
+"VB6STKIT.DLL"
+"ST6UNST.EXE"
+"tileH.ico"
+"dbStudAdmin.mdb"
+"delete.bmp"
+"exit1.bmp"
+"gjeneralitete.bmp"
+"help.ico"
+"insert1.bmp"
+"perdorues.ico"
+"print.ico"
+"printo.bmp"
+"regjister.bmp"
+"statistika.ico"
+"text.ico"

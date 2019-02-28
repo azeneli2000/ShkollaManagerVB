@@ -1,0 +1,150 @@
+VERSION 5.00
+Begin VB.Form frmPrint1 
+   BackColor       =   &H80000009&
+   Caption         =   "Print1"
+   ClientHeight    =   11010
+   ClientLeft      =   60
+   ClientTop       =   450
+   ClientWidth     =   10020
+   LinkTopic       =   "Form1"
+   ScaleHeight     =   194.204
+   ScaleMode       =   0  'User
+   ScaleWidth      =   176.742
+   StartUpPosition =   3  'Windows Default
+   Begin VB.Label lblDatelindja 
+      BackColor       =   &H80000009&
+      Caption         =   "lblDatelindja"
+      BeginProperty Font 
+         Name            =   "Courier New"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   375
+      Left            =   7680
+      TabIndex        =   6
+      Top             =   10658
+      Width           =   1871
+   End
+   Begin VB.Label lblRrethiQyteti 
+      BackColor       =   &H80000009&
+      Caption         =   "lblRrethiQyteti"
+      BeginProperty Font 
+         Name            =   "Courier New"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   375
+      Left            =   4082
+      TabIndex        =   5
+      Top             =   10658
+      Width           =   1701
+   End
+   Begin VB.Label lblFshatiQyteti 
+      BackColor       =   &H80000009&
+      Caption         =   "lblFshatiQyteti"
+      BeginProperty Font 
+         Name            =   "Courier New"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   375
+      Left            =   1695
+      TabIndex        =   4
+      Top             =   10658
+      Width           =   1701
+   End
+   Begin VB.Label lblAmza 
+      BackColor       =   &H80000009&
+      Caption         =   "lblAmza"
+      BeginProperty Font 
+         Name            =   "Courier New"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   375
+      Left            =   1871
+      TabIndex        =   3
+      Top             =   5783
+      Width           =   2775
+   End
+   Begin VB.Label lblShkolla 
+      BackColor       =   &H80000009&
+      Caption         =   "lblShkolla"
+      BeginProperty Font 
+         Name            =   "Courier New"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   375
+      Left            =   1531
+      TabIndex        =   2
+      Top             =   4878
+      Width           =   6888
+   End
+   Begin VB.Label lblRrethi 
+      BackColor       =   &H80000009&
+      Caption         =   "lblRrethi"
+      BeginProperty Font 
+         Name            =   "Courier New"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   375
+      Left            =   3522
+      TabIndex        =   1
+      Top             =   3969
+      Width           =   3798
+   End
+   Begin VB.Label lblEmri 
+      BackColor       =   &H80000009&
+      Caption         =   "lblEmri"
+      BeginProperty Font 
+         Name            =   "Courier New"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   375
+      Left            =   1590
+      TabIndex        =   0
+      Top             =   9975
+      Width           =   5895
+   End
+End
+Attribute VB_Name = "frmPrint1"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Dim vektorTeDhenash(12) As String
+Public Sub FormatData(vekTeDhenash() As Variant)
+    lblName.Caption = vekTeDhenash(0) + " " + vekTeDhenash(2) + " " + vekTeDhenash(1)
+    
+End Sub

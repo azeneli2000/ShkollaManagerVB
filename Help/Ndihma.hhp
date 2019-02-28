@@ -1,0 +1,80 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=Ndihma.chm
+Contents file=Permbajtja.hhc
+Default Window=Help Viewer
+Default topic=index.htm
+Display compile progress=No
+Enhanced decompilation=Yes
+Full-text search=Yes
+Index file=Indeksi.hhk
+Language=0x409 English (United States)
+Title=Ndihma
+
+[WINDOWS]
+Help Viewer=,"Permbajtja.hhc","Indeksi.hhk",,,,,,,0x2520,,0x0,,,,,,,,0
+
+
+[FILES]
+amza.htm
+elimino_nxenes.htm
+evidenca.htm
+gjeneralitete.htm
+hedhje_notash.htm
+hedhje_te_dhenash.htm
+hidh_notat_vjetore_ne_amze.htm
+index.htm
+informacione.htm
+instrumente.htm
+instrumente_klase.htm
+kalo_klase.htm
+konfigurimi.htm
+konsultime.htm
+krijo_perdorues.htm
+modifiko_gjeneralitete.htm
+modifiko_notat.htm
+modifiko_perdorues.htm
+notat.htm
+notat_e_semestrit_te_dyte.htm
+notat_e_semestrit_te_pare.htm
+notat_momentale.htm
+notat_vjetore.htm
+perdorues.htm
+statistika.htm
+statistika_klasat.htm
+statistika_nxenesit.htm
+veprime.htm
+
+[ALIAS]
+1=index.htm
+10=hedhje_te_dhenash.htm
+11=gjeneralitete.htm
+12=hedhje_notash.htm
+13=veprime.htm
+14=modifiko_notat.htm
+15=modifiko_gjeneralitete.htm
+16=elimino_nxenes.htm
+17=statistika.htm
+18=statistika_klasat.htm
+19=statistika_nxenesit.htm
+2=konsultime.htm
+20=konfigurimi.htm
+21=perdorues.htm
+22=informacione.htm
+23=instrumente.htm
+24=instrumente_klase.htm
+25=kalo_klase.htm
+26=hidh_notat_vjetore_ne_amze.htm
+3=notat.htm
+4=notat_momentale.htm
+5=notat_e_semestrit_te_pare.htm
+6=notat_e_semestrit_te_dyte.htm
+7=notat_vjetore.htm
+8=evidenca.htm
+9=amza.htm
+
+[MAP]
+#include map.h
+
+[INFOTYPES]
+

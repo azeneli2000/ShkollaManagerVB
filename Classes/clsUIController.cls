@@ -1,0 +1,215 @@
+VERSION 1.0 CLASS
+BEGIN
+  MultiUse = -1  'True
+  Persistable = 0  'NotPersistable
+  DataBindingBehavior = 0  'vbNone
+  DataSourceBehavior  = 0  'vbNone
+  MTSTransactionMode  = 0  'NotAnMTSObject
+END
+Attribute VB_Name = "clsUIController"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = False
+Attribute VB_Ext_KEY = "SavedWithClassBuilder6" ,"Yes"
+Attribute VB_Ext_KEY = "Top_Level" ,"Yes"
+'
+' * Author           :
+' * Web Site         :
+' * E-Mail           :
+' * Date             : 11/22/2004
+' * Time             : 20:46
+' * Module Name      : clsUIController
+' * Module Filename  : clsUIController.cls
+' * *******************************************************************
+' * Comments         :
+' *
+' *
+' * *******************************************************************
+
+
+
+
+'local variable(s) to hold property value(s)
+Public Enum GUI_ACTION__ENUM
+   KONSULTIME_NOTA_MOMENTALEI = 1
+   KONSULTIME_NOTA_MOMENTALEII = 2
+   KONSULTIME_NOTA_SEMESTRI_I = 3
+   KONSULTIME_NOTA_SEMESTRI_II = 4
+   KONSULTIME_NOTA_VJETORE = 5
+   KONSULTIME_NOTA_DETYRE_KONTROLLI = 6
+   KONSULTIME_NOTA_MUNGESA = 7
+   KONSULTIME_EVIDENCA = 8
+   KONSULTIME_AMZA = 9
+   KONSULTIME_PRINTO = 10
+   KONSULTIME_DALJE = 11
+   HEDHJE_TE_DHENASH_NOTA_MOMENTALEI = 12
+   HEDHJE_TE_DHENASH_NOTA_MOMENTALEII = 13
+   HEDHJE_TE_DHENASH_NOTA_SEMESTRI_I = 14
+   HEDHJE_TE_DHENASH_NOTA_SEMESTRI_II = 15
+   HEDHJE_TE_DHENASH_NOTA_VJETORE = 16
+   HEDHJE_TE_DHENASH_MUNGESA = 17
+   HEDHJE_TE_DHENASH_DETYRE_KONTROLLI = 18
+   HEDHJE_TE_DHENASH_GJENERALITETE = 19
+   VEPRIME_MODIFIKO_NOTA = 20
+   VEPRIME_MODIFIKO_GJENERALITETE = 21
+   VEPRIME_ELEMINO_NXENES = 22
+   STATISTIKA_KLASAT = 23
+   STATISTIKA_NXENESIT = 24
+   KONFIGURIME_PERDORUES = 25
+   KONFIGURIME_PERDORUES_I_RI = 35
+   KONFIGURIME_PERDORUES_MODIFIKO = 36
+   KONFIGURIME_PERDORUES_KERKO = 37
+   KONFIGURIME_INFORMACIONE = 26
+   INSTRUMENTE_KLASE_KONFIGURIM = 27
+   INSTRUMENTE_KLASE_KALO_KLASE = 28
+   INSTRUMENTE_HIDH_NOTA_VJETORE_NE_AMZE = 29
+   NDIHME_PERMBAJTJA = 30
+   HEDHJE_NOTASH_INFO_KLASA = 38
+   VISUALIZO_EVIDENCE = 39
+   NDIHME_INDEKSI = 31
+   NDIHME_ABOUT = 32
+   HEDHJE_TE_DHENASH_GJENERALITETE_FORM_LOAD = 33
+   HEDHJE_TE_DHENASH_GJENERALITETE_RUAJ = 34
+   INSTRUMENTE_KALO_KLASE = 40
+   INSTRUMENTE_LENDE = 41
+   HEDHJE_GJENERALITETE = 42
+   MODIFIKO_NOTAT = 43
+   MODIFIKO_GJENERALITETE1 = 44
+   MODIFIKO_GJENERALITETE2 = 45
+   INSTRUMENTE_LENDE_KLASA_KLIK = 46
+   INSTRUMENTE_VITI_SHKOLLOR_KLIK = 47
+   INSTRUMENTE_KALO_KLASE_KERKO = 48
+   KONSULTIME_AMZA_E_MESME = 49
+   KONSULTIME_AMZA_TETEVJECARE = 50
+   STATISTIKA_NXENES_KLASAT = 51
+   STATISTIKA_NXENES_MESATARE = 52
+   HEDHJE_TE_DHENASH_NOTA = 53
+   HEDHJE_TE_DHENASH_PROVIME = 54
+   STATISTIKA_KLASA_SHFAQ = 55
+   STATISTIKA_LENDET_MESATARET = 56
+   INSTRUMENTE_NXENES_KALO_NE_LISTE = 57
+   ELIMINO_NXENES_KERKO = 58
+   ELIMINO_NXENES_LARGO = 59
+   HEDHJE_SJELLJE = 60
+   HEDHJE_SJELLJE_KERKO = 61
+   HEDHJA_SJELLJA_OK = 62
+   INSTRUMENTE_LENDE_HIDH_PROVIME = 63
+   VERIFIKIMI_I_PERDORUESIT = 64
+   AMZA_SJELLJE = 65
+   INFORMACIONE_MBI_SHKOLLEN = 66
+   SHFAQ_INFORMACION_MBI_SHKOLLEN = 67
+   VEPRIME_MODIFIKO_SHENIME = 68
+   MODIFIKO_SHENIME_LISTA_KLIK = 69
+   MODIFIKO_SHENIME_BUTONI_KLIK = 70
+   INICIALIZO_ADRESA_LOGO = 71
+   MODIFIKO_SHENIME = 72
+   MODIFIKO_SHENIME_SHFAQ = 73
+   HYRJE_NE_PROGRAM = 74
+   KA_PERDORUES = 75
+   ELIMINIMI_I_PERDORUESIT = 76
+   INSTRUMENTE_KERKO = 77
+   VISUALIZO_KLASA_PROVIMET = 78
+   HEDHJA_PROVIME = 79
+   INSTRUMENTE_PASTRO_KLASE = 80
+   HEDHJA_NOTAVE_MOMENTALE = 81
+   HEDHJA_NOTAVE_PERFUNDIMTARE = 82
+   HEDHJA_E_MUNGESAVE = 83
+   MODIFIKIMI_I_PROVIMEVE = 84
+   NDRYSHIMI_I_PROVIMEVE = 85
+   HEDHJA_NE_EKSEL = 86
+   KONTROLLI_I_NOTAVE = 87
+   KONTROLLI_I_REGJISTRIMIT = 88
+   PRINTO_EVIDENCA = 89
+   HEQJA_E_LENDEVE = 90
+   SHFAQJA_E_NOTAVE = 91
+   MUNGESAT_ME_PA = 92
+   KONSULTIMI_I_DATESE_SE_MODIFIKIMIT = 93
+   MODIFIKIMI_I_DATES = 94
+   FSHIRJA_E_TE_DHENAVE = 95
+   FSHIRJA_E_PROVIMEVE = 96
+   NUMER_NXENESISH = 97
+   HEDHJA_SJELLJE_PERKOHSHME = 98
+   HEDHJE_SHENIM_PERKOHSHEM_KERKO = 99
+   SHENIME_PERKOHSHME_HIDH_OK = 100
+   MODIFIKO_SHENIME_PERKOHSHME = 101
+   MODIFIKO_SHENIME_PERKOHSHME_LISTA_KLIK = 102
+   MODIFIKO_SHENIME_PERKOHSHME_PER_NXENESIN_OK = 103
+   MODIFIKO_MUNGESA = 104
+   VIZUALIZO_MUNGESA = 105
+   MUNGESA_ME_ARSYE = 106
+   MUNGESA_PA_ARSYE = 107
+   FSHI_MUNGESA = 108
+   MESATARET_MOMENTALE = 108
+   VIZUALIZO_MESATARET_MOMENTALE = 109
+   NXENESIT_DALLUAR = 110
+   VIZUALIZO_NXENESIT_DALLUAR = 111
+   MESATARET_CIKLI = 112
+   VIZUALIZO_MESATARET_CIKLI = 113
+   SHFAQ_PROVIME = 114
+   MODIFIKO_LENDE = 115
+   HIDH_EKSEL = 116
+End Enum
+
+
+Private mvarErrorHandler As New clsErrorHandler
+Private mvarActionName As GUI_ACTION__ENUM
+
+
+
+Public Property Let actionName(ByVal vData As GUI_ACTION__ENUM)
+    mvarActionName = vData
+End Property
+
+
+Public Property Get actionName() As GUI_ACTION__ENUM
+   actionName = mvarActionName
+End Property
+
+
+Public Property Set ErrorHandler(ByVal vData As clsErrorHandler)
+    Set mvarErrorHandler = vData
+End Property
+
+
+Public Property Get ErrorHandler() As clsErrorHandler
+   Set ErrorHandler = mvarErrorHandler
+End Property
+
+
+ Private Sub Class_Terminate()
+   Set ErrorHandler = Nothing
+End Sub
+
+
+Public Sub ExecuteActions(Optional state As Boolean = False)
+
+   If state = True Then
+      Dim objUIManager     As New clsUIManager
+
+      objUIManager.ActionUI = Me.actionName
+      objUIManager.Execute_UIAction
+
+      Set objUIManager = Nothing
+   Else
+      Dim objBusManager    As New clsBusManager
+
+      objBusManager.actionName = Me.actionName
+      objBusManager.ExecuteActions
+   End If
+
+End Sub
+
+
+'Public Function Clone() As clsUIController
+ '  Dim ClonedObject     As New clsUIController'
+'
+   'With ClonedObject '
+   '   .actionName = Me.actionName '
+   '   Set .ErrorHandler = Me.ErrorHandler.Clone
+   'End With
+
+  ' Set Clone = ClonedObject
+
+   'Set ClonedObject = Nothing
+'End Function

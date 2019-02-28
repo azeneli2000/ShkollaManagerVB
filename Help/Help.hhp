@@ -1,0 +1,74 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=Help.chm
+Contents file=Tabela.hhc
+Default Window=dritare
+Default topic=Amza.htm
+Display compile progress=No
+Language=0x809 English (United Kingdom)
+
+[WINDOWS]
+dritare="NDIHMA","Tabela.hhc",,"Amza.htm",,,,,,0x2120,,0x0,,,,,,,,0
+
+
+[FILES]
+Amza.htm
+cAKTIMI I REZOLUCIONIT.htm
+Elemino nxenes.htm
+Evidencat.htm
+Gjeneralitete.htm
+Hedhje notash.htm
+Hedhje te dhenash_prog_kryes.htm
+Informacione.htm
+Instrumente.htm
+Kalo klase.htm
+Klasat.htm
+Konfigurime.htm
+Konfiguro klase.htm
+Konsultime_prog_kryes.htm
+Kujdes!!!!.htm
+Mbi programin kryesor.htm
+Modifiko gjeneralitete.htm
+Modifiko notat.htm
+Modifiko shenime.htm
+Notat.htm
+Nxenesit.htm
+Perdorimi Fillesatar..htm
+Perdorues.htm
+Shenime.htm
+Statistika.htm
+Veprime_prog_kryesor.htm
+
+[ALIAS]
+f1=Amza.htm
+f10=Kalo klase.htm
+f11=Klasat.htm
+f12=Konfigurime.htm
+f13=Konfiguro klase.htm
+f14=Konsultime_prog_kryes.htm
+f15=Kujdes!!!!.htm
+f16=Mbi programin kryesor.htm
+f17=Modifiko gjeneralitete.htm
+f18=Modifiko notat.htm
+f19=Modifiko shenime.htm
+f2=cAKTIMI I REZOLUCIONIT.htm
+f20=Notat.htm
+f21=Nxenesit.htm
+f22=Perdorimi Fillesatar..htm
+f23=Perdorues.htm
+f24=Shenime.htm
+f25=Statistika.htm
+f26=Veprime_prog_kryesor.htm
+f3=Elemino nxenes.htm
+f4=Evidencat.htm
+f5=Gjeneralitete.htm
+f6=Hedhje notash.htm
+f7=Hedhje te dhenash_prog_kryes.htm
+f8=Informacione.htm
+f9=Instrumente.htm
+
+[MAP]
+#include skedar1.h
+
+[INFOTYPES]
+

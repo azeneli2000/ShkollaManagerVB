@@ -1,0 +1,673 @@
+
+(object Petal
+    version    	42
+    _written   	"Rose 4.5.8054a"
+    charSet    	0)
+
+(object Design "Logical View"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"403670F002EE"
+    defaults   	(object defaults
+	rightMargin 	0.250000
+	leftMargin 	0.250000
+	topMargin  	0.250000
+	bottomMargin 	0.500000
+	pageOverlap 	0.250000
+	clipIconLabels 	TRUE
+	autoResize 	TRUE
+	snapToGrid 	TRUE
+	gridX      	16
+	gridY      	16
+	defaultFont 	(object Font
+	    size       	10
+	    face       	"Arial"
+	    bold       	FALSE
+	    italics    	FALSE
+	    underline  	FALSE
+	    strike     	FALSE
+	    color      	0
+	    default_color 	TRUE)
+	showMessageNum 	1
+	showClassOfObject 	TRUE
+	notation   	"Unified")
+    root_usecase_package 	(object Class_Category "Use Case View"
+	quid       	"403670F002F0"
+	exportControl 	"Public"
+	global     	TRUE
+	logical_models 	(list unit_reference_list)
+	logical_presentations 	(list unit_reference_list
+	    (object UseCaseDiagram "Main"
+		quid       	"403670F0036C"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    root_category 	(object Class_Category "Logical View"
+	quid       	"403670F002EF"
+	exportControl 	"Public"
+	global     	TRUE
+	subsystem  	"Component View"
+	quidu      	"403670F002F1"
+	logical_models 	(list unit_reference_list
+	    (object Class "Amza e nxenesit"
+		quid       	"4036711A0196"
+		class_attributes 	(list class_attribute_list
+		    (object ClassAttribute "Numri i Amzes"
+			quid       	"40367E8402EE"
+			stereotype 	"PK")
+		    (object ClassAttribute "Emri"
+			quid       	"40367E8E01E4")
+		    (object ClassAttribute "Mbiemri"
+			quid       	"40367EB10213")
+		    (object ClassAttribute "Atesia"
+			quid       	"40367EB6000F")
+		    (object ClassAttribute "Memesia"
+			quid       	"40367EB90128")
+		    (object ClassAttribute "Seksi"
+			quid       	"40367EBC02EE")
+		    (object ClassAttribute "Vendlindja"
+			quid       	"40367EBF037A")
+		    (object ClassAttribute "Datelindja"
+			quid       	"40367EC602CE")
+		    (object ClassAttribute "Klasa"
+			quid       	"40367ECD000F"
+			stereotype 	"PK")
+		    (object ClassAttribute "Vrejtje"
+			quid       	"40367F0601E4")))
+	    (object Class "Lenda"
+		quid       	"403671320271"
+		class_attributes 	(list class_attribute_list
+		    (object ClassAttribute "Viti shkollor"
+			quid       	"403679150148"
+			stereotype 	"PK")
+		    (object ClassAttribute "Emri i lendes"
+			quid       	"40368227036B"
+			stereotype 	"PK")))
+	    (object Class "Nota_e_amzes"
+		quid       	"40367198004E"
+		class_attributes 	(list class_attribute_list
+		    (object ClassAttribute "Numri i amzes"
+			quid       	"40367D72001F"
+			stereotype 	"PK")
+		    (object ClassAttribute "Klasa"
+			quid       	"403686B4007D"
+			stereotype 	"PK")
+		    (object ClassAttribute "Nota e provimit1"
+			quid       	"403686C503D8")
+		    (object ClassAttribute "Nota e provimit2"
+			quid       	"40367D89032C")
+		    (object ClassAttribute "Nota e provimit3"
+			quid       	"40367D910203")
+		    (object ClassAttribute "Nota e provimit4"
+			quid       	"40367DA20261")))
+	    (object Class "NewClass"
+		quid       	"403675AF02CE")
+	    (object Class "Nota"
+		quid       	"4036776A00EA"
+		class_attributes 	(list class_attribute_list
+		    (object ClassAttribute "Vleresimi"
+			quid       	"40367BD7008C"
+			stereotype 	"PK")
+		    (object ClassAttribute "Data"
+			quid       	"403689330399")
+		    (object ClassAttribute "Momentale"
+			quid       	"403680580242")
+		    (object ClassAttribute "Semestri1"
+			quid       	"40367C640119")
+		    (object ClassAttribute "Semestri2"
+			quid       	"40367C6D0157")
+		    (object ClassAttribute "Vjetore"
+			quid       	"40367C880232"
+			stereotype 	"PK")))
+	    (object Class "Sjellja"
+		quid       	"4036841200EA"
+		class_attributes 	(list class_attribute_list
+		    (object ClassAttribute "Shenime per sjelljen"
+			quid       	"4036841C029F")
+		    (object ClassAttribute "Viti Shkollor"
+			quid       	"4036842F005D"
+			stereotype 	"PK")))
+	    (object Association "ka keto nota amze"
+		quid       	"403671E401D4"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$0"
+			quid       	"403671E602CE"
+			supplier   	"Logical View::Nota_e_amzes"
+			quidu      	"40367198004E"
+			client_cardinality 	(value cardinality "0..n")
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$1"
+			quid       	"403671E602CF"
+			supplier   	"Logical View::Amza e nxenesit"
+			quidu      	"4036711A0196"
+			client_cardinality 	(value cardinality "1")
+			is_navigable 	TRUE)))
+	    (object Association "$UNNAMED$2"
+		quid       	"403672A2031C"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$3"
+			quid       	"403672A4035B"
+			supplier   	"Logical View::Lenda"
+			quidu      	"403671320271"
+			client_cardinality 	(value cardinality "1")
+			is_navigable 	TRUE)
+		    (object Role "ka keto lende"
+			quid       	"403672A4035C"
+			label      	"ka keto lende"
+			supplier   	"Logical View::Amza e nxenesit"
+			quidu      	"4036711A0196"
+			client_cardinality 	(value cardinality "1")
+			is_navigable 	TRUE)))
+	    (object Association "$UNNAMED$4"
+		quid       	"403675FD01C5"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$5"
+			quid       	"403675FF02CE"
+			supplier   	"Logical View::Nota_e_amzes"
+			quidu      	"40367198004E"
+			client_cardinality 	(value cardinality "1..n")
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$6"
+			quid       	"403675FF02CF"
+			supplier   	"Logical View::Lenda"
+			quidu      	"403671320271"
+			client_cardinality 	(value cardinality "1")
+			is_navigable 	TRUE)))
+	    (object Association "$UNNAMED$7"
+		quid       	"40367619003E"
+		roles      	(list role_list
+		    (object Role "ka keto nota amze"
+			quid       	"4036761A01A5"
+			label      	"ka keto nota amze"
+			supplier   	"Logical View::Nota_e_amzes"
+			quidu      	"40367198004E"
+			client_cardinality 	(value cardinality "1..n")
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$8"
+			quid       	"4036761A01A6"
+			supplier   	"Logical View::Lenda"
+			quidu      	"403671320271"
+			client_cardinality 	(value cardinality "1")
+			is_navigable 	TRUE)))
+	    (object Association "$UNNAMED$9"
+		quid       	"4036777802AF"
+		roles      	(list role_list
+		    (object Role "ka keto nota"
+			quid       	"4036777A0157"
+			label      	"ka keto nota"
+			supplier   	"Logical View::Nota"
+			quidu      	"4036776A00EA"
+			client_cardinality 	(value cardinality "1..n")
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$10"
+			quid       	"4036777A0158"
+			supplier   	"Logical View::Lenda"
+			quidu      	"403671320271"
+			client_cardinality 	(value cardinality "1")
+			is_navigable 	TRUE)))
+	    (object Association "$UNNAMED$11"
+		quid       	"40367DD10203"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$12"
+			quid       	"40367DD300BB"
+			supplier   	"Logical View::Nota_e_amzes"
+			quidu      	"40367198004E"
+			client_cardinality 	(value cardinality "1")
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$13"
+			quid       	"40367DD300BC"
+			supplier   	"Logical View::Nota"
+			quidu      	"4036776A00EA"
+			client_cardinality 	(value cardinality "1")
+			is_navigable 	TRUE)))
+	    (object Association "$UNNAMED$14"
+		quid       	"403682C6031C"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$15"
+			quid       	"403682C800AB"
+			supplier   	"Logical View::Nota_e_amzes"
+			quidu      	"40367198004E"
+			client_cardinality 	(value cardinality "1")
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$16"
+			quid       	"403682C800AC"
+			supplier   	"Logical View::Lenda"
+			quidu      	"403671320271"
+			client_cardinality 	(value cardinality "1")
+			is_navigable 	TRUE)))
+	    (object Association "$UNNAMED$17"
+		quid       	"40368442038A"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$18"
+			quid       	"40368444002E"
+			supplier   	"Logical View::Sjellja"
+			quidu      	"4036841200EA"
+			client_cardinality 	(value cardinality "1")
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$19"
+			quid       	"40368444002F"
+			supplier   	"Logical View::Amza e nxenesit"
+			quidu      	"4036711A0196"
+			client_cardinality 	(value cardinality "1")
+			is_navigable 	TRUE))))
+	logical_presentations 	(list unit_reference_list
+	    (object ClassDiagram "Main"
+		quid       	"403670F0036D"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list
+		    (object ClassView "Class" "Logical View::Nota" @1
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(2224, 1552)
+			label      	(object ItemLabel
+			    Parent_View 	@1
+			    location   	(2054, 1346)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	340
+			    justify    	0
+			    label      	"Nota")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"4036776A00EA"
+			compartment 	(object Compartment
+			    Parent_View 	@1
+			    location   	(2054, 1406)
+			    icon_style 	"Icon"
+			    fill_color 	13434879
+			    anchor     	2
+			    nlines     	7
+			    max_width  	337)
+			width      	358
+			height     	436
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::Lenda" @2
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(2240, 560)
+			label      	(object ItemLabel
+			    Parent_View 	@2
+			    location   	(2036, 454)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	408
+			    justify    	0
+			    label      	"Lenda")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"403671320271"
+			compartment 	(object Compartment
+			    Parent_View 	@2
+			    location   	(2036, 514)
+			    icon_style 	"Icon"
+			    fill_color 	13434879
+			    anchor     	2
+			    nlines     	3
+			    max_width  	406)
+			width      	426
+			height     	236
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$9" @3
+			location   	(2232, 1005)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"4036777802AF"
+			roleview_list 	(list RoleViews
+			    (object RoleView "ka keto nota" @4
+				Parent_View 	@3
+				location   	(1208, 733)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"4036777A0157"
+				client     	@3
+				supplier   	@1
+				line_style 	0
+				label      	(object SegLabel @5
+				    Parent_View 	@4
+				    location   	(2281, 1259)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1..*"
+				    pctDist    	0.773050
+				    height     	53
+				    orientation 	0))
+			    (object RoleView "$UNNAMED$10" @6
+				Parent_View 	@3
+				location   	(1208, 733)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"4036777A0158"
+				client     	@3
+				supplier   	@2
+				line_style 	0
+				label      	(object SegLabel @7
+				    Parent_View 	@6
+				    location   	(2271, 754)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.773050
+				    height     	34
+				    orientation 	1))))
+		    (object ClassView "Class" "Logical View::Nota_e_amzes" @8
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(1168, 1552)
+			label      	(object ItemLabel
+			    Parent_View 	@8
+			    location   	(951, 1346)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	434
+			    justify    	0
+			    label      	"Nota_e_amzes")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"40367198004E"
+			compartment 	(object Compartment
+			    Parent_View 	@8
+			    location   	(951, 1406)
+			    icon_style 	"Icon"
+			    fill_color 	13434879
+			    anchor     	2
+			    nlines     	7
+			    max_width  	431)
+			width      	452
+			height     	436
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$11" @9
+			location   	(1719, 1552)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"40367DD10203"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$12" @10
+				Parent_View 	@9
+				location   	(695, 784)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"40367DD300BB"
+				client     	@9
+				supplier   	@8
+				line_style 	0
+				label      	(object SegLabel @11
+				    Parent_View 	@10
+				    location   	(1428, 1606)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.900000
+				    height     	54
+				    orientation 	0))
+			    (object RoleView "$UNNAMED$13" @12
+				Parent_View 	@9
+				location   	(695, 784)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"40367DD300BC"
+				client     	@9
+				supplier   	@1
+				line_style 	0
+				label      	(object SegLabel @13
+				    Parent_View 	@12
+				    location   	(2010, 1606)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.900000
+				    height     	54
+				    orientation 	1))))
+		    (object AssociationViewNew "$UNNAMED$14" @14
+			location   	(1753, 1009)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"403682C6031C"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$15" @15
+				Parent_View 	@14
+				location   	(329, 657)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"403682C800AB"
+				client     	@14
+				supplier   	@8
+				line_style 	0
+				label      	(object SegLabel @16
+				    Parent_View 	@15
+				    location   	(1468, 1347)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.900000
+				    height     	54
+				    orientation 	0))
+			    (object RoleView "$UNNAMED$16" @17
+				Parent_View 	@14
+				location   	(329, 657)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"403682C800AC"
+				client     	@14
+				supplier   	@2
+				line_style 	0
+				label      	(object SegLabel @18
+				    Parent_View 	@17
+				    location   	(2112, 752)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.900000
+				    height     	54
+				    orientation 	1))))
+		    (object ClassView "Class" "Logical View::Amza e nxenesit" @19
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(1184, 560)
+			label      	(object ItemLabel
+			    Parent_View 	@19
+			    location   	(964, 254)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	440
+			    justify    	0
+			    label      	"Amza e nxenesit")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"4036711A0196"
+			compartment 	(object Compartment
+			    Parent_View 	@19
+			    location   	(964, 314)
+			    icon_style 	"Icon"
+			    fill_color 	13434879
+			    anchor     	2
+			    nlines     	11
+			    max_width  	437)
+			width      	458
+			height     	636
+			autoResize 	TRUE)
+		    (object AssociationViewNew "ka keto nota amze" @20
+			location   	(1174, 1105)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"403671E401D4"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$0" @21
+				Parent_View 	@20
+				location   	(934, 833)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"403671E602CE"
+				client     	@20
+				supplier   	@8
+				line_style 	0
+				label      	(object SegLabel @22
+				    Parent_View 	@21
+				    location   	(1229, 1266)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"0..*"
+				    pctDist    	0.703959
+				    height     	57
+				    orientation 	0))
+			    (object RoleView "$UNNAMED$1" @23
+				Parent_View 	@20
+				location   	(934, 833)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"403671E602CF"
+				client     	@20
+				supplier   	@19
+				line_style 	0
+				label      	(object SegLabel @24
+				    Parent_View 	@23
+				    location   	(1215, 925)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.797619
+				    height     	38
+				    orientation 	1))))
+		    (object ClassView "Class" "Logical View::Sjellja" @25
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(288, 560)
+			label      	(object ItemLabel
+			    Parent_View 	@25
+			    location   	(93, 454)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	390
+			    justify    	0
+			    label      	"Sjellja")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"4036841200EA"
+			compartment 	(object Compartment
+			    Parent_View 	@25
+			    location   	(93, 514)
+			    icon_style 	"Icon"
+			    fill_color 	13434879
+			    anchor     	2
+			    nlines     	3
+			    max_width  	387)
+			width      	408
+			height     	236
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$17" @26
+			location   	(723, 560)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"40368442038A"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$18" @27
+				Parent_View 	@26
+				location   	(-461, 0)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"40368444002E"
+				client     	@26
+				supplier   	@25
+				line_style 	0
+				label      	(object SegLabel @28
+				    Parent_View 	@27
+				    location   	(516, 614)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.900000
+				    height     	54
+				    orientation 	0))
+			    (object RoleView "$UNNAMED$19" @29
+				Parent_View 	@26
+				location   	(-461, 0)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"40368444002F"
+				client     	@26
+				supplier   	@19
+				line_style 	0
+				label      	(object SegLabel @30
+				    Parent_View 	@29
+				    location   	(930, 614)
+				    anchor     	2
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	15
+				    justify    	0
+				    label      	"1"
+				    pctDist    	0.900000
+				    height     	54
+				    orientation 	1))))))))
+    root_subsystem 	(object SubSystem "Component View"
+	quid       	"403670F002F1"
+	physical_models 	(list unit_reference_list)
+	physical_presentations 	(list unit_reference_list
+	    (object Module_Diagram "Main"
+		quid       	"403670F0036B"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    process_structure 	(object Processes
+	quid       	"403670F002F2"
+	ProcsNDevs 	(list
+	    (object Process_Diagram "Deployment View"
+		quid       	"403670F002F4"
+		title      	"Deployment View"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    properties 	(object Properties
+	quid       	"403670F002F3"))

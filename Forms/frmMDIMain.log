@@ -1,0 +1,4 @@
+Line 20: Class MSComDlg.CommonDialog of control CommonDialog1 was not a loaded control class.
+Line 27: Class MSComctlLib.StatusBar of control stbDown was not a loaded control class.
+Line 64: Class MSComctlLib.ImageList of control imlImages was not a loaded control class.
+Line 73: Class MSComctlLib.Toolbar of control tblMenus was not a loaded control class.

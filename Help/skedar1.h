@@ -1,0 +1,27 @@
+#define f1  1
+#define f2  2
+#define f3  3
+#define f4  4
+#define f5  5
+#define f6  6
+#define f7  7
+#define f8  8
+#define f9  9
+#define f10  10
+#define f11  11
+#define f12  12
+#define f13  13
+#define f14  14
+#define f15  15
+#define f16  16
+#define f17  17
+#define f18  18
+#define f19  19
+#define f20  20
+#define f21  21
+#define f22  22
+#define f23  23
+#define f24  24
+#define f25  25
+#define f26  26
+

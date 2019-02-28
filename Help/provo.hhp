@@ -1,0 +1,39 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=provo.chm
+Contents file=provo.hhc
+Default Window=dritare
+Default topic=index.html
+Display compile progress=No
+Language=0x409 English (United States)
+Title=Ndihma
+
+[WINDOWS]
+dritare=,"provo.hhc",,,,,,,,0x2120,,0x0,,,,,,,,0
+
+
+[FILES]
+index.html
+konsultime.html
+notat.html
+evidenca.html
+amza.html
+hedhje_te_dhenash.html
+gjeneralitete.html
+hedhje_notash.html
+
+[ALIAS]
+f1=index.html
+f2=konsultime.html
+f3=notat.html
+f4=evidenca.html
+f5=amza.html
+f6=hedhje_te_dhenash.html
+f7=gjeneralitete.html
+f8=hedhje_notash.html
+
+[MAP]
+#include map_provo.h
+
+[INFOTYPES]
+

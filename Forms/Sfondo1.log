@@ -1,0 +1,5 @@
+Line 24: Class MSComctlLib.StatusBar of control StatusBar2 was not a loaded control class.
+Line 42: Class MSComDlg.CommonDialog of control CommonDialog1 was not a loaded control class.
+Line 58: Class MSComctlLib.ImageList of control Iml was not a loaded control class.
+Line 596: Class MSComctlLib.ImageList of control Img16x16 was not a loaded control class.
+Line 1279: Class MBMsgBoxEx.MsgBoxEx of control Msg1 was not a loaded control class.

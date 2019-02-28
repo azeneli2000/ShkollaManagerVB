@@ -1,0 +1,13 @@
+Private Sub Form_Load()
+Dim ws As Workspace
+Dim db As Database
+Dim qdf As QueryDef
+Dim strsql As String
+
+strsql = "INSERT INTO stuinfo (nRollNo)values('str')"
+Set ws = DBEngine.Workspaces(0)
+Set db = ws.OpenDatabase(App.Path & "\bazaB.mdb")
+Set qdf = db.CreateQueryDef("", strsql)
+qdf.Execute
+
+End Sub
